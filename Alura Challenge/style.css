@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --cor-primaria: #ece9ff;
+    --cor-secundaria: #836FFF;
+    --cor-terciaria: #a395ff;
+    --cor-quaternaria: #F0F3FF;
+
+    --fonte-primaria: "Bebas Neue", sans-serif;
+    --fonte-secundaria: "Roboto Mono", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dad4ff; /* Cor de fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #836FFF; /* Cor da barra de rolagem */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6757c9; /* Cor ao passar o mouse sobre a barra de rolagem */
+}
+
+.logo-bl{
+    margin-left: 8%;
+    padding-top: 3%;
+    width: 2%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 1%;
+    margin-left: 12%;
+}
+
+.text-area{
+    border: none;
+    font-size: 20px;
+    margin-top: 80px;
+    text-transform: lowercase;
+    color: var(--cor-secundaria);
+}
+
+::placeholder {color: var(--cor-secundaria);}
+    .text-area:focus{
+        outline: none;
+    } /*pra caixa de texto não ficar destacda ao clicar*/
+
+.mensagem{
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    margin-left: 140px;
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    font-size: 20px;
+}
+
+.mensagem:focus{
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 18px;
+}
+
+.crip-button{
+    font-weight: bold;
+    background: var(--cor-secundaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    height: 65px;
+    width: 328px;
+}
+
+.descrip-button{
+    font-weight: bold;
+    background: var(--cor-primaria);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 24px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    height: 65px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.copy-button{
+    font-weight: bold;
+    background: var(--cor-primaria);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 24px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    height: 65px;
+    margin-left: 108px;
+    margin-top: 520px;
+    width: 328px;
+}
+
+.info{
+    display: flex;
+}
+
+.info-img{
+    margin-right: 10px;
+}
+
+.info-p{
+    color: var(--cor-secundaria);
+}
