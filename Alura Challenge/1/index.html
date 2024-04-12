@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/bialogo.svg">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/bialogo.svg" alt="Beatriz Lauro logo" class="logo-bl">
+    </header>    
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="40" rows="15" placeholder="Digite seu texto..."></textarea>
+
+            <div class="info">
+                <img src="./assets/error icon.svg" alt="Atenção" class="info-img">
+                <p class="info-p">Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="buttons">
+                <button class="crip-button" onclick="btnEncriptar()">Criptografar</button>
+                <button class="descrip-button" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensagem" cols="20" rows="15"></textarea>
+            <button class="copy-button">Copiar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
